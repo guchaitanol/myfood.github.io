@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+:root{
+    --main-bg-color: #11bae1bf;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: var(--main-bg-color);
+    font-family: 'La Belle Aurore', cursive;
+}
+nav{
+    display: flex;
+}
+.logo img{
+    width: 147px;
+    padding: 0 13px;
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+ nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: red;
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 25px;
+    width: 30vw;
+    border-radius: 15px;
+    margin: 0 14px 0 100px;
+    padding: 0 12px;
+}
+.search button{
+    font-family: 'La Belle Aurore', cursive;
+    font-weight: 1000;
+}
+.container{
+    min-height: calc(100vh - 50px - 8vh);
+}
+.slider img{
+    height: 44vh;
+    width: 100vw;
+    margin: 12px auto;
+}
+.card-item img{
+    height: 190px;
+padding: 0 0 0 23px;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 8px;
+}
+.card-item img:hover{
+    border: 1.78mm ridge black;
+    height: 200px;
+    cursor: pointer;
+}
+.card h2{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin: 0 0 12px 24px;
+    color: red;
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.lines p{
+    padding: 0 0 0 23px;
+}
+footer{
+    height: 8vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'La Belle Aurore', cursive;
+}
